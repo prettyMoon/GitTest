@@ -4,12 +4,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp">
+    <include layout="@layout/title_layout" />
 
-        <ImageView
-            android:layout_width="@dimen/title_btn_size_height"
-            android:layout_height="@dimen/title_btn_size_width" />
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/info_background"
+        android:gravity="center"
+        android:text="提示信息"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <com.example.hongli.idiom.tools.LineGridView
+        android:id="@+id/grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/grid_background"
+        android:gravity="center"
+        android:numColumns="10"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_background"
+            android:hint="请输入答案"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_answer_background"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>

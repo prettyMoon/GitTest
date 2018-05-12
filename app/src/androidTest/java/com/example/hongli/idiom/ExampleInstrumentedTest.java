@@ -1,4 +1,4 @@
-package com.example.hongli.gittest;
+package com.example.hongli.idiom;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

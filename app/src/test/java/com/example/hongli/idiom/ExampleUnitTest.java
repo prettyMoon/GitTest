@@ -1,4 +1,4 @@
-package com.example.hongli.gittest;
+package com.example.hongli.idiom;
 
 import org.junit.Test;
 
